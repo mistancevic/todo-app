@@ -47,7 +47,7 @@ h1 {
   outline-offset: -1px;
 }
 
-.todo-form button {
+.btn {
   padding: 10px 18px;
   font-size: 1rem;
   border: none;
@@ -57,8 +57,22 @@ h1 {
   cursor: pointer;
 }
 
-.todo-form button:hover {
+.btn:hover {
   background: #2563eb;
+}
+
+.btn[hidden] {
+  display: none;
+}
+
+.list-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.list-footer:has(.btn[hidden]) {
+  display: none;
 }
 
 .todo-list {

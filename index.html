@@ -11,10 +11,13 @@
     <h1>Todo</h1>
     <form id="todo-form" class="todo-form">
       <input id="todo-input" type="text" placeholder="What needs to be done?" autocomplete="off" required aria-label="New task">
-      <button type="submit">Add</button>
+      <button type="submit" class="btn">Add</button>
     </form>
     <ul id="todo-list" class="todo-list"></ul>
     <p id="empty-state" class="empty-state">No tasks yet.</p>
+    <div class="list-footer">
+      <button id="clear-completed" type="button" class="btn" hidden>Clear completed</button>
+    </div>
   </main>
   <script src="app.js"></script>
 </body>
